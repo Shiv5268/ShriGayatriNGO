@@ -1,0 +1,14 @@
+<Section class="container">
+    <h4 class="mt-4">Stenography</h4>
+    <div class="row mb-4">
+        <div class="col-sm-4 d-flex justify-content-center mt-3" *ngFor="let video of Lectures">
+            <div class="card">
+                <iframe [src]="cleanURL(video.link)" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                    allowfullscreen>
+                </iframe>
+                <p class="text-center card-text">Lecture - {{video.lec}}</p>
+            </div>
+        </div>
+    </div>
+</Section>

@@ -1,0 +1,30 @@
+.navbar{
+    background: var(--main-bg-color);
+}
+.logo {
+    width: 3rem;
+}
+.navbar-nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar li a{
+    color: #fff;
+    cursor: pointer;
+}
+form .btn{
+    color: var(--main-bg-color);
+    background-color: #fff;
+}
+@media only screen and (max-width: 992px) {
+    .navbar-nav{
+        width: 98%;
+    }
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}

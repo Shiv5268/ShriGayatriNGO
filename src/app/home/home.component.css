@@ -1,0 +1,131 @@
+.carousel-item img {
+    height: 500px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.carousel-item {
+    -webkit-animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.section-1 img {
+    width: 100%;
+    max-width: 18em;
+    border-radius: 20px;
+}
+
+.drop-cap {
+    text-align: justify;
+}
+
+.drop-cap:first-of-type:first-letter {
+    float: left;
+    margin: 0 4px 0 0;
+    font-size: 3.5em;
+    line-height: .8em;
+    display: block;
+    color: var(--main-bg-color);
+    text-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+    background-color: var(--main-bg-color);
+    color: #fff;
+    border-radius: 50rem;
+}
+
+.eventsImg .card {
+    width: 90%;
+    margin: auto;
+    height: 20rem;
+}
+
+.eventsImg img {
+    height: 220px;
+    width: 100%;
+}
+
+.eventsImg .card-title {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .section-1 img {
+        max-width: 120px;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .eventsImg .card {
+        height: 100%;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+.main-cal {
+    width: 90%;
+    float: right;
+}
+
+/* Upcoming Events CSS */
+.cal {
+    background: #fff;
+    overflow-y: hidden;
+    padding:10px;
+    width: 100%;
+    scrollbar-width: auto;
+    height: 6.5rem;
+    border-radius: 0.4em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.cal p{
+    margin:4px 0px;
+}
+.cal a{
+    /* text-decoration: none; */
+    color:var(--main-bg-color);
+}
+@media (max-width:599px) {
+    .main-cal {
+        width: 100%;
+    }
+}

@@ -1,0 +1,172 @@
+<main class="main">
+    <!-- Slider Images -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../../assets/images/Slider/AWARENESSPROGRAMUNDERCLEANINDIAMISSION.jpg" class="d-block w-100"
+                    alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+                <img src="../../assets/images/Slider/SKILLDEVELOPMENTPROGRAMBYINDUSTRYEXPERTS.jpg" class="d-block w-100"
+                    alt="Slide 4">
+            </div>
+            <div class="carousel-item">
+                <img src="..\..\assets\images\Slider\BOOKDISTRIBUTIONUNDERSAKSHARTAMISSION.jpg" class="d-block w-100"
+                    alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="../../assets/images/Slider/TREEPLANTATIONUNDERENVIRONMENTALSUSTAINABILITY.jpg"
+                    class="d-block w-100" alt="Slide 1">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- About -->
+    <!-- {{items | async | json}} -->
+    <section class="container section-1 mt-5">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <p class="drop-cap">Shri gayatri Education is a non-profitable, Non-Government Organization (NGO),
+                    established in 2019 under Society Registration Act 1860 void registration number
+                    GBN/10274/2018-19 that aims to underprivileged people of the society, to
+                    empower them in respect of education, health, skill development, employment
+                    etc., who are deprived from accessing the main stream resources.</p>
+                <button class="btn" routerLink="/AboutUs">READ MORE</button>
+            </div>
+            <div class="col-sm-6 mt-4 mt-sm-0">
+                <!-- Upcoming Events Section -->
+                <div class="main-cal">
+                    <h4 class="cal-heading">Recent Events</h4>
+                    <div class="cal">
+                        <!-- <div class="m-2" *ngIf="(events | async)?.length==0">
+                            <h6 class="">New Events will be updated soon.</h6>
+                        </div> -->
+                        <!-- <div *ngIf="(events | async)?.length">
+                            <div class="cal-event" *ngFor="let event of events | async ">
+                                <div class="cal-event-tile">
+                                    <div class="cal-event-tile-date">{{event.date}}</div>
+                                    <div class="cal-event-tile-month">{{event.month}}</div>
+                                </div>
+                                <div class="cal-event-desc">
+                                    <div class="cal-event-title">
+                                        {{event.title}}
+                                    </div>
+                                    <div class="cal-event-time">
+                                        <i class="fas fa-clock me-2"></i>
+                                        {{event.time}}
+                                    </div>
+                                    <div class="cal-event-location">
+                                        <i class="fas fa-map-marker-alt me-2"></i>
+                                        <div class="cal-event-location-content">
+                                            {{event.location}}
+                                        </div>
+                                    </div>
+                                    <a class="cal-event-map" href="{{event?.calEventMapLink}}" target="_blank">
+                                        View Map</a>
+                                </div>
+                            </div>
+                        </div> -->
+                        <marquee class="GeneratedMarquee" direction="up" scrollamount="2" behavior="scroll"
+                            onmouseover="this.stop();" onmouseout="this.start();">
+                            <p>
+                                <a href="https://www.youtube.com/watch?v=p-OlIzKaiJo&feature=youtu.be" target="_blank">
+                                    Workshop & Training Program at Dr. B.R. Ambedkar Junior High School, Rahispur
+                                </a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">
+                                    Dussehra Sharbat Distribution
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://fb.watch/iMfB9sh8SV/?mibextid=ijjfgs" target="_blank">
+                                    Food Distibution to poor people.
+                                </a>
+                            </p>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container section-2 mt-5">
+        <div class="d-flex justify-content-between">
+            <h2>Our Events</h2>
+            <div>
+                <button class="btn" routerLink="/Events">See All</button>
+            </div>
+        </div>
+        <div class="my-4">
+            <owl-carousel-o [options]="customOptions" class="my-4 eventsImg">
+                <ng-template carouselSlide>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="../../assets/images/SwachtaAbhiyan/SwachtaImg1.jpeg" alt="img1"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-title">Swachta Abhiyan Program & Memento</h6>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="../../assets/images/Awareness/A1.jpg" alt="img1" class="">
+                            <div class="card-body">
+                                <h6 class="card-title">Awareness Program For Upliftment Of Women In Rural Areas</h6>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="../../assets/images/BooksDistribution/BD2.jpeg" alt="img1" class="">
+                            <div class="card-body">
+                                <h6 class="card-title">Books Distribution</h6>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="../../assets/images/EssayCompetition/EC2.jpg" alt="img1" class="">
+                            <div class="card-body">
+                                <h6 class="card-title">Essay Competition & Prize Distribution</h6>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="../../assets/images/Plantation/PlantationImg1.jpg" alt="img1" class="">
+                            <div class="card-body">
+                                <h6 class="card-title"> Tree Plantation</h6>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </section>
+</main>

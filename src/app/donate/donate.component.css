@@ -1,0 +1,7 @@
+.donateTitle{
+    text-align: justify;
+}
+.sectionDonate{
+    height: -webkit-fill-available;
+    min-height: 57vh;
+}
