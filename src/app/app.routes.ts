@@ -34,11 +34,11 @@ export const routes: Routes = [
         component:ProgramListComponent
     },
     {
-        path: "Program/BasicsOfComputer",
+        path: "BasicsOfComputer",
         component: BasicsComponent
     },
     {
-        path: "Program/Stenography",
+        path: "Stenography",
         component: StenographyComponent
     }
 ];
